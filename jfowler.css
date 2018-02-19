@@ -1,0 +1,113 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, input, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* Define Custom Variables Here */
+/* Default Variables */
+/* main font family */
+/* rgba color with opacity */
+/* main width of wrapper */
+/* height of footer */
+/* sets text color for input fields */
+/* sets the number of columns in the grid */
+/* sets padding for columns */
+/* Default Styles */
+html { height: 100%; }
+body { height: 100%; font-family: helvetica; }
+.bodyWrap { min-height: 100%; position: relative; }
+::-moz-selection { background: rgba(255, 204, 36, 0.6); }
+::selection { background: rgba(255, 204, 36, 0.6); }
+.wrap { width: 870px; margin: auto; }
+.clear { clear: both; }
+.fullWidth, header#header, footer { width: 100%; min-width: 870px; }
+.beforeFooter { padding-bottom: 100px; clear: both; }
+
+/* Convert px to rem */
+/* Float */
+.left { float: left; }
+.right { float: right; }
+
+/* Text Align */
+.textLeft { text-align: left; }
+.textCenter { text-align: center; }
+.textRight { text-align: right; }
+.textJust { text-align: justify; }
+
+/* Position */
+.fixed { position: fixed; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+
+/* Display */
+.hide, .mobile { display: none; }
+.block, .desktop { display: block; }
+.inline { display: inline; }
+.inlineBlock { display: inline-block; }
+
+/* Font Weight */
+.bold, strong { font-weight: bold; }
+.regular { font-weight: normal; }
+.italic, em { font-style: italic; }
+
+/* Responsive Element -- Good for making perfect squares or circles */
+.element { position: relative; }
+.element:after { content: ''; display: block; padding-top: 100%; }
+
+/* Responsive Iframe, Object, Embed */
+.videoContainer { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+.videoContainer iframe, .videoContainer object, .videoContainer embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* Full Width Image (requires width and height) */
+.fullImg { position: relative; overflow: hidden; }
+.fullImg img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); margin: auto; min-width: 100%; min-height: 100%; }
+
+/* Grid */
+.col1 { width: 8.3333333333%; }
+.col2 { width: 16.6666666667%; }
+.col3 { width: 25%; }
+.col4 { width: 33.3333333333%; }
+.col5 { width: 41.6666666667%; }
+.col6 { width: 50%; }
+.col7 { width: 58.3333333333%; }
+.col8 { width: 66.6666666667%; }
+.col9 { width: 75%; }
+.col10 { width: 83.3333333333%; }
+.col11 { width: 91.6666666667%; }
+.col12 { width: 100%; }
+[class*="col"] { float: left; -webkit-box-sizing: border-box; box-sizing: border-box; min-height: 1px; }
+
+.pad { padding: 10px; }
+
+/* Typography */
+a { text-decoration: none; }
+h1 { font-size: 42px; font-size: 2.625rem; line-height: 46px; line-height: 2.875rem; font-family: "ff-good-headline-web-pro-con"; font-weight: 800; }
+h2 { font-size: 22px; font-size: 1.375rem; line-height: 24px; line-height: 1.5rem; font-family: "ff-good-headline-web-pro-con"; font-weight: 800; position: relative; }
+h3 { font-size: 20px; font-size: 1.25rem; line-height: 25px; line-height: 1.5625rem; }
+h4 { font-size: 18px; font-size: 1.125rem; line-height: 23px; line-height: 1.4375rem; }
+p { font-size: 16px; font-size: 1rem; line-height: 21px; line-height: 1.3125rem; }
+
+h1 a, h2 a, h3 a { color: #000; }
+h1 a .line, h2 a .line, h3 a .line { position: relative; }
+h1 a .line:after, h2 a .line:after, h3 a .line:after { content: ''; display: block; z-index: -1; width: 0%; height: 100%; position: absolute; top: 0; left: 0; -webkit-transition: .2s ease; transition: .2s ease; background: #FFCC24; }
+
+h1 a:hover .line:nth-child(1):after, h2 a:hover .line:nth-child(1):after, h3 a:hover .line:nth-child(1):after { width: 100%; -webkit-transition: .2s ease; transition: .2s ease; }
+h1 a:hover .line:nth-child(2):after, h2 a:hover .line:nth-child(2):after, h3 a:hover .line:nth-child(2):after { width: 100%; -webkit-transition-delay: .1s; transition-delay: .1s; -webkit-transition-duration: .2s ease; transition-duration: .2s ease; }
+h1 a:hover .line:nth-child(3):after, h2 a:hover .line:nth-child(3):after, h3 a:hover .line:nth-child(3):after { width: 100%; -webkit-transition-delay: .2s; transition-delay: .2s; -webkit-transition-duration: .2s ease; transition-duration: .2s ease; }
+h1 a:hover .line:nth-child(4):after, h2 a:hover .line:nth-child(4):after, h3 a:hover .line:nth-child(4):after { width: 100%; -webkit-transition-delay: .3s; transition-delay: .3s; -webkit-transition-duration: .2s ease; transition-duration: .2s ease; }
+h1 a:hover .line:nth-child(5):after, h2 a:hover .line:nth-child(5):after, h3 a:hover .line:nth-child(5):after { width: 100%; -webkit-transition-delay: .4s; transition-delay: .4s; -webkit-transition-duration: .2s ease; transition-duration: .2s ease; }
+h1 a:hover .line:nth-child(6):after, h2 a:hover .line:nth-child(6):after, h3 a:hover .line:nth-child(6):after { width: 100%; -webkit-transition-delay: .5s; transition-delay: .5s; -webkit-transition-duration: .2s ease; transition-duration: .2s ease; }
+h1 a:hover .line:nth-child(7):after, h2 a:hover .line:nth-child(7):after, h3 a:hover .line:nth-child(7):after { width: 100%; -webkit-transition-delay: .6s; transition-delay: .6s; -webkit-transition-duration: .2s ease; transition-duration: .2s ease; }
+h1 a:hover .line:nth-child(8):after, h2 a:hover .line:nth-child(8):after, h3 a:hover .line:nth-child(8):after { width: 100%; -webkit-transition-delay: .7s; transition-delay: .7s; -webkit-transition-duration: .2s ease; transition-duration: .2s ease; }
+h1 a:hover .line:nth-child(9):after, h2 a:hover .line:nth-child(9):after, h3 a:hover .line:nth-child(9):after { width: 100%; -webkit-transition-delay: .8s; transition-delay: .8s; -webkit-transition-duration: .2s ease; transition-duration: .2s ease; }
+
+p a { background: #FFCC24; color: #000; }
+
+.meta { width: 100%; display:block; clear:both;}
+.meta span.media { font-size: 18px; line-height: 40px; font-family: "ff-good-headline-web-pro-con"; font-weight: 400; display: inline-block; font-style:italic; }

@@ -1,0 +1,4 @@
+.error{background-color: red;}
+.moreChars{background-color: yellow;}
+.item p{display: none;}
+.item:hover p{display: block;}
